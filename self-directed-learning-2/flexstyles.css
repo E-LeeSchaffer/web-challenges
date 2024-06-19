@@ -1,0 +1,50 @@
+.green-box {
+  display: flex;
+  background-color: var(--green);
+  padding: 12px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.blue-box {
+  display: flex;
+  background-color: var(--blue);
+  border-radius: 8px;
+  color: var(--eggshell);
+  padding: 8px;
+}
+
+.flex-1 .green-box {
+  justify-content: space-between;
+}
+
+.flex-2 .green-box {
+  justify-content: space-evenly;
+}
+.flex-2 .blue-box {
+  flex: 1;
+}
+
+.flex-3 .blue-box:nth-child(1) {
+  flex-grow: 2;
+}
+
+.flex-3 .blue-box:nth-child(2) {
+  flex-grow: 1;
+}
+
+.flex-3 .blue-box:nth-child(3) {
+  flex-grow: 1;
+}
+
+.flex-4 .blue-box:nth-child(1) {
+  flex-grow: 2;
+}
+
+.flex-4 .blue-box:nth-child(2) {
+  flex-grow: 3;
+}
+
+.flex-4 .blue-box:nth-child(3) {
+  flex-grow: 1;
+}
