@@ -1,0 +1,55 @@
+.main {
+  background-color: var(--yellow);
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+.header {
+  background-color: var(--pink);
+  color: var(--text-white);
+  line-height: 2.3;
+  padding-inline: 8px;
+}
+
+.boxes__total {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "box-one box-side"
+    "box-two box-side"
+    "box-three box-side";
+  gap: 12px;
+}
+
+.box {
+  padding-inline: 8px;
+}
+
+.box__one {
+  background-color: var(--darkblue);
+  color: var(--text-white);
+  grid-area: box-one;
+}
+
+.box__two {
+  background-color: var(--green);
+  grid-area: box-two;
+}
+
+.box__three {
+  background-color: var(--green);
+  grid-area: box-three;
+}
+
+.box__side {
+  background-color: var(--lightblue);
+  grid-area: box-side;
+}
+
+.footer {
+  background-color: var(--darkblue);
+  color: var(--text-white);
+  font-size: 0.8rem;
+  padding-inline: 8px;
+  line-height: 2;
+}
