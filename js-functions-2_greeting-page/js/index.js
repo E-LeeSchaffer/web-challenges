@@ -22,6 +22,8 @@ Change the contents of this page depending on the current day and time.
 
 const display = document.querySelector('[data-js="display"]');
 
+display.addEventListener("click", test);
+
 function getGreeting() {
   const currentTime = new Date().getHours();
 
@@ -46,6 +48,10 @@ function getDayColor() {
   } else {
     return (document.body.style.backgroundColor = "hotpink");
   }
+}
+
+function test() {
+  console.log("Beispiel");
 }
 
 display.textContent = getGreeting();
