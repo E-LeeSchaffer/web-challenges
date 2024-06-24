@@ -10,30 +10,33 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-      <h1 id="title" class="title">Understanding A11y in Forms</h1>
-      <p id="description">
-        Please let us know how we can support you with a11y issues.
-      </p>
+    
+      <section>
+        <h1 id="title" class="title">Understanding A11y in Forms</h1>
+        <form>
+        <p id="description">
+          Please let us know how we can support you with a11y issues.
+        </p>
 
-      <form aria-labelledby="title">
-        <fieldset aria-describedby="description">
-          <legend>Enter your information</legend>
-          <label for="name-Input">Name:</label>
-          <input id="name-Input" type="text" name="name" />
-          <label for="age-Input">Age:</label>
-          <input id="age-Input" type="text" name="age" />
-          <label for="color-Input">Color you cannot see:</label>
-          <input id="color-Input" type="color" name="color" />
-          <label for="message-field">Leave us a message:</label>
-          <textarea
-            id="message-field"
-            rows="7"
-            placeholder="Leave us a message..."
-          ></textarea>
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
+        <form aria-labelledby="title">
+          <fieldset aria-describedby="description">
+            <legend>Enter your information</legend>
+            <label for="name-Input">Name:</label>
+            <input id="name-Input" type="text" name="name" />
+            <label for="age-Input">Age:</label>
+            <input id="age-Input" type="text" name="age" />
+            <label for="color-Input">Color you cannot see:</label>
+            <input id="color-Input" type="color" name="color" />
+            <label for="message-field">Leave us a message:</label>
+            <textarea
+              id="message-field"
+              rows="7"
+              placeholder="Leave us a message..."
+            ></textarea>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </form>
   </body>
 </html>

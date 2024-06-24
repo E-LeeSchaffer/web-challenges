@@ -11,25 +11,24 @@
   </head>
   <body>
     <h1>Create your Personal Profile</h1>
-    <section>
-    <fieldset>
+    <form>
+    
+
       <p>We want to get to know you! Please enter your personal information.</p>
       <fieldset>
         <legend>Personal Information</legend>
         <label for="first-name">*First Name:</label
         ><input type="text" id="first-name" required/>
         <label for="last-name">*Last Name:</label
-        ><input type="text" id="last-name" minlength="3"/>
+        ><input type="text" id="last-name" minlength="3" required/>
         <label for="your-birthday">Your Birthday:</label
         ><input type="date" id="your-birthday" />
       </fieldset>
-    </section>
-    <section>
-      <p>
+      <p id="description-p">
         Can you tell us a little bit more? We want to annoy you with unwanted
         ads.
       </p>
-      <fieldset>
+      <fieldset aria-describedby="description-p">
         <legend>Further Information</legend>
         <label for="favourite-color">Favourite Color:</label><input type="color" id="favourite-color" value="#e5430f"/>
         <label for="favourite-pet">What's your favourite pet?</label><select id="favourite-pet">
@@ -39,8 +38,8 @@
         <option value="Fried Egg Jellyfish">Fried Egg Jellyfish</option>
         </fieldset>
         </select>
-      <button type="submit">Submit</button>
     </fieldset>
-  </section>
+    <button type="submit">Submit</button>
+</form>
   </body>
 </html>
