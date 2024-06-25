@@ -22,3 +22,8 @@ buttonUppercase.addEventListener("click", () => {
   const newValue = oldValue.toUpperCase();
   inputValue.value = newValue;
 });
+
+// Lösung:
+// uppercaseButton.addEventListener("click", () => {
+//   input.value = input.value.toUpperCase();
+// });
