@@ -15,7 +15,7 @@ const nestedArray = [["example"], 10, true];
 
 const numbers = [20, 10, 50];
 
-const firstNumber = 20;
+const firstNumber = numbers[0];
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
