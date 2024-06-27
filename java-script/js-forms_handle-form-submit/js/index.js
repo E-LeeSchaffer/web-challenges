@@ -11,8 +11,8 @@ form.addEventListener("submit", (event) => {
   console.log("data:", data);
 
   //   reset the form and refocus to first name
-  const formElements = event.target.elements;
   event.target.reset();
+  const formElements = event.target.elements;
   formElements.firstName.focus();
 
   console.log("badness:", badness);
