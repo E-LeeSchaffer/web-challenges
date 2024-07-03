@@ -14,23 +14,22 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 const article = document.createElement("article");
 const content = document.createElement("p");
 const footer = document.createElement("footer");
-const userName = document.createElement("span");
-const copiedlikeButton = document.createElement("button");
+const usernameDisplay = document.createElement("span");
+const generatedLikeButton = document.createElement("button");
 
 article.classList.add("post");
 content.classList.add("post__content");
 footer.classList.add("post__footer");
-userName.classList.add("post__username");
-copiedlikeButton.classList.add("post__button");
+usernameDisplay.classList.add("post__username");
+generatedLikeButton.classList.add("post__button");
 
 content.textContent =
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
-userName.textContent = "@username";
-copiedlikeButton.textContent = "♥ Like";
+usernameDisplay.textContent = "@username2";
+generatedLikeButton.textContent = "♥ Like";
+
+generatedLikeButton.addEventListener("click", handleLikeButtonClick);
 
 article.append(content, footer);
-footer.append(userName, copiedlikeButton);
-
+footer.append(usernameDisplay, generatedLikeButton);
 document.body.append(article);
-
-copiedlikeButton.addEventListener("click", handleLikeButtonClick);
