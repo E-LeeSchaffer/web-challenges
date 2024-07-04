@@ -34,9 +34,17 @@ const questionsAndAnswersTogether = cards.map((card) => {
 }); // ["How often can I use <header>? - As often as you like.", ...]
 console.log(questionsAndAnswersTogether);
 
-const questionAndAnswer = cards.map((card) => {
-  return `question: ${card.question}, answer: ${card.answer}`;
-}); // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
-console.log(questionAndAnswer);
+const questionAndAnswer = cards.map((card, idx) => {
+  const obj = { question: card.question, answer: card.answer };
+  return obj;
+  // const obj = {};
+  // obj[`question${idx}`] = card.question;
+  // obj[`answer${idx}`] = card.answer;
+  // return obj;
+});
+
+//   return `question: ${card.question}, answer: ${card.answer}`;
+// }); // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+// console.log(questionAndAnswer);
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
