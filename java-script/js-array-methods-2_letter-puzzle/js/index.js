@@ -93,9 +93,9 @@ console.log("employees sorted by age", employeesSortedByAge);
 // QUESTION 11: We want a new employees array sorted by last name descending (Z -> A)
 // Hint use toSorted()
 
-const employeesSortedByLastName = employees.toSorted(
-  (a, b) => b.lastName - a.lastName
-);
+const employeesSortedByLastName = employees.toSorted((a, b) => {
+  return b.lastName.localeCompare(a.lastName);
+});
 console.log("employees sorted by last name", employeesSortedByLastName);
 
 // Great! 🎉 You got it! 🚀 Now you can read the solution of the letter puzzle. 💪
