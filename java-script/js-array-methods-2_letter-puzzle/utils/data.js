@@ -235,7 +235,7 @@ export const employees = [
     firstName: "Matilda",
     lastName: "Guerrero",
     phone: "(915) 470-2151",
-    age: 58,
+    age: 58, 
     email: "usabi@ok.com",
     profession: "Management Consultant",
     address: "127 Gefik Junction",
