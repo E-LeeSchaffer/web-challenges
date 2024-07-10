@@ -15,6 +15,7 @@ async function fetchUserData(url) {
     console.log("Headers:", response.headers);
 
     const contentType = response.headers.get("content-type");
+    console.log("Content-Type:", contentType);
     if (!contentType || !contentType.includes("json")) {
       throw new Error(`Expected JSON, but received ${contentType}`);
     }
