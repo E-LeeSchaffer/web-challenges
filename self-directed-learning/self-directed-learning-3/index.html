@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>email</title>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="firstName">First Name</label>
+      <input name="firstName" id="firstName" data-js="firstName" required />
+      <label for="lastName">Last Name</label>
+      <input name="lastName" id="lastName" data-js="lastName" required />
+      <button type="submit" data-js="submitButton">Generate Email</button>
+    </form>
+    <span data-js="generated-email">...</span>
+  </body>
+</html>
