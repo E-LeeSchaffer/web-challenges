@@ -6,7 +6,7 @@ function Article() {
     <article>
       <h2 className="article__title">Title</h2>
       <label htmlFor="input">Name:</label>
-      <input id="input" placeholder="type in your input"></input>
+      <input id="input" placeholder="type in your input" />
       <a className="article__link" href="https://de.wikipedia.org/wiki/React">
         Go to Wikipedia
       </a>
