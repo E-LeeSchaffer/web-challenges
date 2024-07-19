@@ -20,6 +20,7 @@ function Button({ color, disabled, text, onClick }) {
 
 export default function App() {
   function handleClick() {
+    console.log("Button clicked");
     alert("You clicked me!");
   }
 
