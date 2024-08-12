@@ -32,7 +32,11 @@ export default function PokemonList() {
 
   return (
     <main>
-      {offset > 0 && <button type="button">Previous Page</button>}
+      {offset > 0 && (
+        <button type="button" onClick={() => setOffset(offset - 1)}>
+          Previous Page
+        </button>
+      )}
       <button type="button" onClick={() => setOffset(offset + 1)}>
         Next Page
       </button>
