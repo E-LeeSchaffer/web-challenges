@@ -32,7 +32,7 @@ export default function StatusCheck() {
         setStatusIcon("❌");
       }
     } catch (error) {
-      setStatusIcon("👎🛜");
+      setStatusIcon("🚨");
       console.error("error retrieving API status:", error);
     }
     // --^-- write your code here --^--
