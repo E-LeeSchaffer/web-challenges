@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  width: fit-content;
+  padding: 20px;
+}
+
+.header-title {
+  margin: 0;
+}

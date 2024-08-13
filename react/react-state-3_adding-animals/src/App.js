@@ -27,6 +27,7 @@ export default function App() {
 
   function handleAddAnimal(newAnimal) {
     setAnimals([...animals, { id: uid(), ...newAnimal }]);
+
   }
 
   return (
