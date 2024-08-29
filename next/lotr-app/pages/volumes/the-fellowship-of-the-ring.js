@@ -20,13 +20,7 @@ export default function VolumeOne() {
           </li>
         ))}
       </ul>
-      <Image
-        src={"/." + volume.cover}
-        alt={volume.title}
-        width={400}
-        height={400}
-      />
-
+      <Image src={volume.cover} alt={volume.title} width={400} height={400} />
       <VolumeLinks />
     </>
   );

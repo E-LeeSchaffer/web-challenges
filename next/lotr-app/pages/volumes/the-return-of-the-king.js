@@ -1,6 +1,7 @@
 import { volumes } from "@/resources/lib/data";
 import next from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VolumeThree() {
   const volume = volumes.find(({ slug }) => slug === "the-return-of-the-king");
@@ -17,6 +18,7 @@ export default function VolumeThree() {
           </li>
         ))}
       </ul>
+      <Image src={volume.cover} alt={volume.title} width={400} height={400} />
       <VolumeLinks />
     </>
   );
