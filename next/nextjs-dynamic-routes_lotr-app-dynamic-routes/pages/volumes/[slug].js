@@ -6,7 +6,7 @@ import { useRouter } from "next/router.js";
 export default function VolumeDetail() {
   const router = useRouter();
   const { slug } = router.query;
-  console.log("slug query:", slug);
+
   const volumeIndex = volumes.findIndex((volume) => volume.slug === slug);
 
   const volume = volumes[volumeIndex];
@@ -16,6 +16,8 @@ export default function VolumeDetail() {
   if (!volume) {
     return null;
   }
+
+  console.log("slug query:", slug);
 
   const { title, description, cover, books } = volume;
 
