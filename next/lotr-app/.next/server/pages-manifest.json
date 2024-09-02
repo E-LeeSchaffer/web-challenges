@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/volumes/the-fellowship-of-the-ring": "pages/volumes/the-fellowship-of-the-ring.js",
+  "/volumes/the-two-towers": "pages/volumes/the-two-towers.js",
+  "/volumes/the-return-of-the-king": "pages/volumes/the-return-of-the-king.js"
+}
