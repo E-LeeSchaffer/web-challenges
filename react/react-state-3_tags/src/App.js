@@ -14,6 +14,7 @@ export default function App() {
     setTags(tags.filter((tag) => tag !== tagToDelete));
   }
 
+
   return (
     <main className="app">
       <Form onAddTag={handleAddTag} />
