@@ -5,7 +5,8 @@ export default function App() {
   const [code, setCode] = useState("");
   const validCode = "🐡🐠🐋";
 
-  function handleClick(event) {
+  function handleClick(event, testValue) {
+    console.log("value:", testValue);
     const newCode = code + event.target.textContent;
     setCode(newCode);
     console.log("update code:", newCode);
