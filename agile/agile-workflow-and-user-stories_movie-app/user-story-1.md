@@ -1,4 +1,4 @@
-# List of movies
+# List of current movies
 
 ## Value Proposition
 
@@ -22,6 +22,5 @@
 
 - Create a feature branch.
 - Set up React component for each movie card.
+- Fetch data with api and create an error message within the fetch function when no data are available.
 - Use map array method to display all movies on one page as a list.
-- Create a details page for each movie.
-- Create an error message which is displayed when no data are available.

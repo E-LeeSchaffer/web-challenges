@@ -1,10 +1,10 @@
-# Title
+# Movie detail page
 
 ## Value Proposition
 
-**As a** `<Role>` <br>
-**I want to** `<Need>` <br>
-**so that** `<Purpose>` <br>
+**As a** `Move-App-User` <br>
+**I want to** `see details of each movie` <br>
+**so that** `I can ` <br>
 
 ## Description
 
